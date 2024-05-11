@@ -1,0 +1,223 @@
+<!-- 1:let-it cannot be updated and redeclared in the same scope
+var:it can be updated and redeclared
+const:it cannot be updated and redeclred in any how
+
+2:var ne akha code ma gme tya declare kri sko bt let ne only particular block ni undr j declare kri skay nd var sec time reuse thai ske bt let nai
+3:bcz it cannot be changed in used only once in whole over code
+4:block scope means a particular statements which is inside the {}
+let and const both are only used inside the block 
+5:Primitive data type-number,string,undefined,boolean,null
+6:undefined means var declare kryo che bt eni undr koi value pass krel nthi nd null means var ni value j null apeli change
+7:==-it is used for comparison only value
+===-it is used for comparison value nd its data types -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //8
+        let string = "123";
+        let num = parseInt(string);
+        console.log(num); // Output: 123
+
+        // Convert Number to String
+        let number = 456;
+        let string2 = number.toString();
+        console.log(string2);
+
+        //9
+        const obj = {
+            firstName: 'Karan',
+            lastName: 'Soni'
+        };
+
+        obj.std = '10th';
+        obj.rollNo = '02';
+
+        console.log(obj);
+
+        //10
+        const newObj = {
+            ...obj,
+        }
+        newObj.std = '5th';
+        newObj.rollNo = '01';
+
+        console.log(newObj);
+
+        //11
+        const scores = [85, 92, 78, 95, 88];
+        const a = scores.filter((val, index) => {
+            return scores == 78 && scores == 95
+        })
+        console.log(a);
+
+        //12
+        const val = '98';
+        scores[scores.length] = val;
+        console.log(scores)
+
+        //13
+        function calculateArea(radius) {
+            // Formula to calculate area of a circle: π * r^2
+            const area = 3.14 * Math.pow(radius, 2);
+            return area;
+        }
+
+        const radius = 5;
+        const area = calculateArea(radius);
+        console.log(area);
+
+        //17
+        let arr = [1, 2, 3, 4, 5];
+        arr.pop();
+        console.log(arr)
+
+        //18
+        let arr1 = [1, 2, 3]
+        arr1.push(4)
+        console.log(arr1)
+
+        //19
+        let arr2 = [1, 2, 3, 4, 5];
+        arr2.shift();
+        console.log(arr2)
+
+        //20
+        let arr3 = [2, 3, 4]
+        arr3.unshift(1)
+        console.log(arr3)
+
+        //21
+        let arr4 = [1, 2]
+        let arr5 = [3, 4]
+        let f = arr4.concat(arr5)
+        console.log(f)
+
+        //22
+        let tasks = ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5"];
+        tasks.splice(1, 2)
+        console.log(tasks);
+
+        //23
+        const g = [1, 2, 3, 4]
+        g.splice(1, 2)
+        console.log(g)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        //24
+        g.splice(1)
+        console.log(g)
+
+        //25
+        let colors = ["red", "green", "blue", "yellow"]
+        colors.splice(1, 1);
+        console.log(colors);
+
+        //26
+        let fruits = ["apple", "orange", "grape"];
+        fruits.splice(1, 0, 'banana')
+        console.log(fruits)
+
+        //27
+        let num2 = [1, 2, 3, 4, 5];
+        num2.splice(1, 2, 5, 6);
+        console.log(num2);
+
+        //28
+        let num3 = [1, 2, 3, 4, 5];
+        let e = num3.slice(0, 3);
+        console.log(e);
+
+        //29
+        let num4 = ["a", "b", "c", "d", "e"];
+        let extracted = num4.slice(0, 2)
+        console.log(extracted);
+
+        //30
+        let arr8 = [1, 2, 3, 4, 5];
+        let newArr1 = arr8.map(val => val * 2);
+        console.log(newArr1);
+
+        //31    
+        let arr6 = ["apple", "banana", "orange", "kiwi"];
+        let na = arr6.map(arr6 => arr6.length);
+        console.log(na);
+
+        //32
+        let colors1 = ["red", "green", "blue"];
+        let arr7 = colors1.map(colors1 => "color: " + colors1);
+        console.log(arr7);
+
+        // 33
+        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let nr = numbers.filter((val) => {
+            return val % 2 == 0;
+        });
+        console.log(nr)
+
+        //34
+        let students = [
+            { name: "Alice", age: 22 },
+            { name: "Bob", age: 18 },
+            { name: "jay", age: 25 }
+        ];
+        let std = students.filter(val => val.age > 20);
+        console.log(std);
+
+        //35
+        let arr9 = ["apple", "banana", "orange", "kiwi", "strawberry"];
+        let arr10 = arr9.filter(val => val.length > 5);
+        console.log(arr10);
+
+        //36
+        let arr11 = [-3, -2, -1, 0, 1, 2, 3]
+        let arr12 = arr11.filter(num => num > 0);
+        console.log(arr12);
+
+        //37
+
+        let arr13 = [1, 2, 3, 4, 5];
+        let arr14 = arr13.reduce((a, b) => {
+            return a + b
+        })
+        console.log(arr14)
+
+
+
+    </script>
+</body>
+
+</html>

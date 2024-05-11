@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = 5;
+        //console.log(a++);\5
+        // console.log(++a); //6
+
+        let b = 10;
+        let c = 2;
+        let d = 5;
+        console.log(b * c - d / c);//17.5
+
+        let x = '5';
+        console.log(a == x);//true
+        console.log(a === x);//false
+
+        console.log(b !== a);//true
+        var1=true;
+        var2= false;
+        var3= true;
+        console.log(var1 && var1 || var2);//true
+        console.log ((var1 && !var2) || var3);//true
+        console.log (var1 || (var2 && !var3));//true
+
+        let age=18 ;
+        let fage=19;
+
+        if(age==fage)
+        {
+            console.log("isEligibleToVote");
+           
+        }
+        else{
+            console.log("isnotEligibleToVote");
+            
+        }
+        let sage = 20;
+        let Citizen = true;
+        let Registered = true;
+
+        if (sage >= 18) {
+            if (Citizen) {
+                if (isRegistered) {
+                    console.log("Person is eligible to vote");
+                } else {
+                    console.log("Person is not registered to vote");
+                }
+            } else {
+                console.log("Person is not a citizen");
+            }
+        } else {
+            console.log("Person is not old enough to vote");
+        }
+           </script>
+</body>
+
+</html>

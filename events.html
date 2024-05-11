@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    
+</head>
+<body>
+    <button id="click">Click me</button>
+    <input type="text" placeholder="name" id="input"/>
+    <script>
+        //onclick
+        //onmouseover
+        //
+
+        const btn = document.getElementById('click')
+        console.log(btn)
+
+        const input = document.getElementById('input')
+        
+
+        // btn.onclick=((=>{
+        //     console.log("clicked")
+        // }))
+
+        // btn.onclick=((=>{
+        //     console.log("clicked1234")
+        // }))
+
+        btn.addEventListener("click",()=>{
+            console.log('clicked')
+        })
+
+        btn.addEventListener("click",()=>{
+            console.log('clicked1234')
+        })
+
+        btn.addEventListener("click",()=>{
+            console.log('mouseover')
+        })
+
+        btn.addEventListener("click",()=>{
+            console.log('mouseout')
+        })
+
+        // input.addEventListener("change",()=>{
+        //     console.log('Changes')
+        // })
+
+        input.addEventListener("input",(e)=>{
+            // console.log('Changes',e.target.value.length)
+            if(e.target.value.length<6){
+                console.log("enter valid entry")
+            }
+        })
+
+       
+    </script>
+</body>
+</html>

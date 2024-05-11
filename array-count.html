@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          const firstname = "jenish";
+      const lastname = "bhilavala";
+
+      const students = {
+        fname: "Jenish",
+        lname: "Bhilavala",
+        roll: [1, 2, 3, 4, 5],
+        subject: {
+          easy: "English",
+          medium: "Maths",
+          difficulty: ["java", "js"],
+        },
+      };
+      students.fname = "Saran";
+      console.log(students);
+
+      const rollNo = [1, 2, 3, 4, 5];
+      rollNo[1] = 10;
+      console.log(rollNo);
+
+      const newStudent = {
+        ...students,
+      };
+      newStudent.fname = "saran ji";
+      console.log("Student" + students);
+      console.log("New Student" + newStudent);
+    </script>
+</body>
+</html>

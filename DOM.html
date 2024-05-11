@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="first-div">First Div</div>
+    <div id="second-div" class="third-div">Second div</div>
+    <p>World</p>
+    <div id="third-div" class="third-div">Third div</div>
+    <p>Hello</p>
+    <script>
+        //DOM manipulation
+
+        //Selection methods
+        //1.getElementById
+        // const a=document.getElementById("third-div").innerHTML;
+        // console.log(a)
+
+        //2.getElementByClassName
+        // const b = document.getElementsByClassName("third-div").item(0).innerHTML;
+        // console.log(b);
+
+        //3.getElementByTagName
+        // const c = document.getElementsByTagName("p")[0].innerHTML;
+        // console.log(c);
+
+        //console.log(window);
+        //console.log(document);
+
+        // const d = document.querySelectorAll(".third-div");
+        // console.log(d);
+
+        // const e = document.querySelector("#first-div");
+        // console.log(e);
+
+        // const f = document.querySelectorAll("div");
+        // console.log(f);
+
+        // const g = document.getElementById("first-div").innerHTML='last-div';
+        // console.log(g);
+
+        // const h = document.getElementById("second-div");
+        // h.innerHTML="<h1>Fenny</h1>"
+        // h.style.color="red";
+        // console.log(h);
+
+        // const i = document.getElementById("first-div");
+        // console.log(i);
+
+        // const j = document.createElement("div").innerHTML = "inside div"
+        // console.log(j);
+
+        //append
+        //prepend
+        //before
+        //after
+
+        // i.append(j);
+
+        //set timeout and set interval
+
+        // setTimeout(()=> {
+        //     console.log("Promise Academy");
+        // },4000);
+
+        // setInterval(()=> {
+        //     console.log("Promise Academy");
+        // },2000);
+
+        const a = document.createElement("p").innerHTML="Promise Acedemy";
+        console.log(a);
+
+        const b = document.getElementById("first-div");
+        console.log(b);
+
+        b.before(a);
+
+        setTimeout(()=> {
+            console.log("Fenny Savaliya");
+        },4000);
+
+        // setInterval(()=> {
+        //     console.log("Fenny Savaliya");
+        // },2000);
+    </script>
+</body>
+</html>

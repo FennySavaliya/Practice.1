@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //for each original array mueated kre-change nai krto
+        //map
+
+        const a = [1, 2, 3, 4, 5, 6]
+
+        // const b=a.forEach((val,index)=>{
+        //   return val+1;
+
+        //});
+
+        //console.log(b);
+
+        //const b=a.map((val,index)=>val+1);//output is new array
+        //console.log(a);
+        //console.log(b);
+
+        //filter - new array generate kre
+
+        //         const b=a.filter((val,index)=>{
+        //     return val % 2==0;
+        // });
+        // console.log(b)
+
+
+        //find method-first value ape
+        // const b=a.find((val,index)=>{
+        //     return val>2;
+        // });
+        // console.log(b);
+        
+        //findIndex method
+
+        // const b=a.findIndex((val,index)=>{
+        //     return val>2;
+        // });
+        // console.log(b);
+
+        //includes method
+        // const b=a.includes(10);
+        // const c=a.includes(2);
+        // console.log(b);
+        // console.log(c);
+
+        //reduce method
+        const b=a.reduce((a,b)=>{
+            return a+b;
+        })
+        console.log(b);
+
+    </script>
+</body>
+
+</html>
